@@ -732,8 +732,8 @@
 <!-- SIDEBAR -->
 <aside class="sidebar">
   <div class="sidebar-logo">
-    <h1>Paws & Claws</h1>
-    <span>Pet Clinic · Chennai</span>
+    <h1>Paws &amp; Claws</h1>
+    <span>Pet Clinic &middot; Chennai</span>
   </div>
   <nav class="nav-section">
     <div class="nav-label">Main</div>
@@ -759,7 +759,7 @@
       Invoice History
     </div>
   </nav>
-  <div class="sidebar-footer">v1.0 · Paws & Claws PMS</div>
+  <div class="sidebar-footer">v1.0 &middot; Paws &amp; Claws PMS</div>
 </aside>
 
 <!-- MAIN -->
@@ -780,22 +780,22 @@
         <div class="stat-card gold">
           <div class="stat-label">Total Invoices</div>
           <div class="stat-value" id="stat-total">0</div>
-          <div class="stat-sub" id="stat-revenue">Gross: ₹ 0</div>
+          <div class="stat-sub" id="stat-revenue">Gross: &#8377; 0</div>
         </div>
         <div class="stat-card green">
           <div class="stat-label">Paid</div>
           <div class="stat-value" id="stat-paid">0</div>
-          <div class="stat-sub" id="stat-paid-amt">₹ 0</div>
+          <div class="stat-sub" id="stat-paid-amt">&#8377; 0</div>
         </div>
         <div class="stat-card orange">
           <div class="stat-label">Draft / Unpaid</div>
           <div class="stat-value" id="stat-draft">0</div>
-          <div class="stat-sub" id="stat-draft-amt">₹ 0</div>
+          <div class="stat-sub" id="stat-draft-amt">&#8377; 0</div>
         </div>
         <div class="stat-card purple">
           <div class="stat-label">Outstanding</div>
           <div class="stat-value" id="stat-outstanding">0</div>
-          <div class="stat-sub" id="stat-outstanding-amt">₹ 0</div>
+          <div class="stat-sub" id="stat-outstanding-amt">&#8377; 0</div>
         </div>
       </div>
       <div class="stats-grid" style="margin-bottom:28px;">
@@ -843,7 +843,7 @@
       </div>
 
       <div class="filter-bar">
-        <input type="text" class="search-input" placeholder="Search by pet name, owner, breed…" oninput="filterPatients(this.value)">
+        <input type="text" class="search-input" placeholder="Search by pet name, owner, breed&hellip;" oninput="filterPatients(this.value)">
         <select onchange="filterPatients(null, this.value)">
           <option value="">All Types</option>
           <option value="Canine">Canine</option>
@@ -875,7 +875,7 @@
       </div>
 
       <div class="filter-bar">
-        <input type="text" class="search-input" placeholder="Search by patient or doctor…" oninput="filterCheckins(this.value)">
+        <input type="text" class="search-input" placeholder="Search by patient or doctor&hellip;" oninput="filterCheckins(this.value)">
         <select onchange="filterCheckins(null, this.value)">
           <option value="">All</option>
           <option value="open">Open</option>
@@ -906,7 +906,7 @@
       </div>
 
       <div class="filter-bar">
-        <input type="text" class="search-input" placeholder="Search invoices…" oninput="filterBilling(this.value)">
+        <input type="text" class="search-input" placeholder="Search invoices&hellip;" oninput="filterBilling(this.value)">
         <select id="billing-status-filter" onchange="filterBilling(null, this.value)">
           <option value="">All Status</option>
           <option value="Paid">Paid</option>
@@ -924,10 +924,10 @@
       <div class="table-wrap">
         <table>
           <thead><tr>
-            <th onclick="sortBilling('date')">Date ↕</th>
+            <th onclick="sortBilling('date')">Date &#8597;</th>
             <th>Invoice #</th><th>Patient</th><th>Owner</th>
-            <th onclick="sortBilling('total')">Total ↕</th>
-            <th onclick="sortBilling('balance')">Balance ↕</th>
+            <th onclick="sortBilling('total')">Total &#8597;</th>
+            <th onclick="sortBilling('balance')">Balance &#8597;</th>
             <th>Method</th><th>Status</th><th>Actions</th>
           </tr></thead>
           <tbody id="billing-tbody"></tbody>
@@ -945,7 +945,7 @@
     <div class="page" id="page-invoices">
       <div class="export-bar">
         <div>
-          <h3>Revenue Reports & Export</h3>
+          <h3>Revenue Reports &amp; Export</h3>
           <p>Sort and download invoices by date range, week, month or year</p>
         </div>
         <div class="export-controls">
@@ -971,12 +971,12 @@
           </select>
           <input type="date" id="export-from" style="display:none; background:rgba(255,255,255,0.15); border-color:rgba(255,255,255,0.3); color:white;">
           <input type="date" id="export-to" style="display:none; background:rgba(255,255,255,0.15); border-color:rgba(255,255,255,0.3); color:white;">
-          <button class="btn btn-gold" onclick="exportExcel()">⬇ Download Excel</button>
+          <button class="btn btn-gold" onclick="exportExcel()">&#8675; Download Excel</button>
         </div>
       </div>
 
       <div class="filter-bar">
-        <input type="text" class="search-input" placeholder="Search invoices, patients, owners…" oninput="filterInvoices(this.value)">
+        <input type="text" class="search-input" placeholder="Search invoices, patients, owners&hellip;" oninput="filterInvoices(this.value)">
         <select onchange="filterInvoices(null, this.value)">
           <option value="">All Status</option>
           <option value="Paid">Paid</option>
@@ -1017,11 +1017,11 @@
   <div class="modal">
     <div class="modal-header">
       <h3>Register Patient</h3>
-      <button class="modal-close" onclick="closeModal('modal-patient')">×</button>
+      <button class="modal-close" onclick="closeModal('modal-patient')">&times;</button>
     </div>
     <div class="modal-body">
       <div class="form-section">
-        <div class="form-section-title">🐾 Pet Details</div>
+        <div class="form-section-title">&#x1F43E; Pet Details</div>
         <div class="form-grid cols3">
           <div class="form-group">
             <label>Pet Name *</label>
@@ -1067,7 +1067,7 @@
         </div>
       </div>
       <div class="form-section">
-        <div class="form-section-title">👤 Owner / Parent Details</div>
+        <div class="form-section-title">&#x1F464; Owner / Parent Details</div>
         <div class="form-grid">
           <div class="form-group">
             <label>Owner Name *</label>
@@ -1099,12 +1099,12 @@
 <div class="modal-overlay" id="modal-checkin">
   <div class="modal">
     <div class="modal-header">
-      <h3>Check-in & SOAP Notes</h3>
-      <button class="modal-close" onclick="closeModal('modal-checkin')">×</button>
+      <h3>Check-in &amp; SOAP Notes</h3>
+      <button class="modal-close" onclick="closeModal('modal-checkin')">&times;</button>
     </div>
     <div class="modal-body">
       <div class="form-section">
-        <div class="form-section-title">Patient & Doctor</div>
+        <div class="form-section-title">Patient &amp; Doctor</div>
         <div class="form-grid">
           <div class="form-group">
             <label>Select Patient *</label>
@@ -1125,40 +1125,40 @@
         </div>
       </div>
       <div class="form-section">
-        <div class="form-section-title">📋 SOAP — Diagnosis Notes</div>
+        <div class="form-section-title">&#x1F4CB; SOAP &mdash; Diagnosis Notes</div>
         <div class="soap-section">
           <div class="soap-block">
-            <label>S — Subjective</label>
-            <textarea id="ci-subjective" placeholder="Patient history, owner observations, symptoms reported…"></textarea>
+            <label>S &mdash; Subjective</label>
+            <textarea id="ci-subjective" placeholder="Patient history, owner observations, symptoms reported&hellip;"></textarea>
           </div>
           <div class="soap-block">
-            <label>O — Objective</label>
-            <textarea id="ci-objective" placeholder="Physical exam findings, vitals, test results…"></textarea>
+            <label>O &mdash; Objective</label>
+            <textarea id="ci-objective" placeholder="Physical exam findings, vitals, test results&hellip;"></textarea>
           </div>
           <div class="soap-block">
-            <label>A — Assessment</label>
-            <textarea id="ci-assessment" placeholder="Diagnosis, differential diagnosis…"></textarea>
+            <label>A &mdash; Assessment</label>
+            <textarea id="ci-assessment" placeholder="Diagnosis, differential diagnosis&hellip;"></textarea>
           </div>
           <div class="soap-block">
-            <label>P — Plan</label>
-            <textarea id="ci-plan" placeholder="Treatment plan, medications, follow-up…"></textarea>
+            <label>P &mdash; Plan</label>
+            <textarea id="ci-plan" placeholder="Treatment plan, medications, follow-up&hellip;"></textarea>
           </div>
         </div>
       </div>
       <div class="form-section">
-        <div class="form-section-title">💊 Treatment Notes</div>
+        <div class="form-section-title">&#x1F48A; Treatment Notes</div>
         <div class="form-grid cols1">
           <div class="form-group">
             <label>Procedures Performed</label>
-            <textarea id="ci-procedures" placeholder="e.g. Gas Anesthesia, Intestinal Resection…"></textarea>
+            <textarea id="ci-procedures" placeholder="e.g. Gas Anesthesia, Intestinal Resection&hellip;"></textarea>
           </div>
           <div class="form-group">
             <label>Medications Prescribed</label>
-            <textarea id="ci-meds" placeholder="Drug name, dosage, frequency…"></textarea>
+            <textarea id="ci-meds" placeholder="Drug name, dosage, frequency&hellip;"></textarea>
           </div>
           <div class="form-group">
             <label>Follow-up Instructions</label>
-            <textarea id="ci-followup" placeholder="e.g. Return in 7 days, GI diet for 12 days…" style="min-height:60px;"></textarea>
+            <textarea id="ci-followup" placeholder="e.g. Return in 7 days, GI diet for 12 days&hellip;" style="min-height:60px;"></textarea>
           </div>
         </div>
       </div>
@@ -1175,7 +1175,7 @@
   <div class="modal" style="max-width:860px;">
     <div class="modal-header">
       <h3>Create Invoice</h3>
-      <button class="modal-close" onclick="closeModal('modal-billing')">×</button>
+      <button class="modal-close" onclick="closeModal('modal-billing')">&times;</button>
     </div>
     <div class="modal-body">
       <div class="form-section">
@@ -1220,17 +1220,17 @@
         <div class="form-section-title">Line Items</div>
         <table class="billing-table" id="billing-items-table">
           <thead><tr>
-            <th>Item / Service</th><th>Qty</th><th>Unit Price (₹)</th><th>Discount (₹)</th><th>Total (₹)</th><th></th>
+            <th>Item / Service</th><th>Qty</th><th>Unit Price (&#8377;)</th><th>Discount (&#8377;)</th><th>Total (&#8377;)</th><th></th>
           </tr></thead>
           <tbody id="billing-items-body"></tbody>
         </table>
         <button class="btn btn-outline btn-sm" onclick="addBillingRow()">+ Add Line Item</button>
         <div class="billing-total">
-          <div class="total-line"><span>Sub Total</span><span id="b-subtotal">₹ 0.00</span></div>
-          <div class="total-line"><span>Discount</span><span id="b-discount-total">₹ 0.00</span></div>
-          <div class="total-line grand"><span>Total Due</span><span id="b-total">₹ 0.00</span></div>
+          <div class="total-line"><span>Sub Total</span><span id="b-subtotal">&#8377; 0.00</span></div>
+          <div class="total-line"><span>Discount</span><span id="b-discount-total">&#8377; 0.00</span></div>
+          <div class="total-line grand"><span>Total Due</span><span id="b-total">&#8377; 0.00</span></div>
           <div class="total-line"><span>Amount Paid</span><input type="number" id="b-paid-amt" style="width:120px; text-align:right;" placeholder="0" oninput="calcBalance()"></div>
-          <div class="total-line"><span>Balance</span><span id="b-balance">₹ 0.00</span></div>
+          <div class="total-line"><span>Balance</span><span id="b-balance">&#8377; 0.00</span></div>
         </div>
       </div>
     </div>
@@ -1246,14 +1246,14 @@
   <div class="modal" style="max-width:680px;">
     <div class="modal-header">
       <h3>Invoice Preview</h3>
-      <button class="modal-close" onclick="closeModal('modal-invoice-view')">×</button>
+      <button class="modal-close" onclick="closeModal('modal-invoice-view')">&times;</button>
     </div>
     <div class="modal-body">
       <div class="invoice-preview" id="invoice-preview-content"></div>
     </div>
     <div class="modal-footer">
       <button class="btn btn-outline" onclick="closeModal('modal-invoice-view')">Close</button>
-      <button class="btn btn-gold" onclick="printInvoice()">🖨 Print / Save PDF</button>
+      <button class="btn btn-gold" onclick="printInvoice()">&#x1F5A8; Print / Save PDF</button>
     </div>
   </div>
 </div>
@@ -1262,8 +1262,8 @@
 <div class="modal-overlay" id="modal-checkin-view">
   <div class="modal">
     <div class="modal-header">
-      <h3>SOAP Notes — <span id="checkin-view-patient"></span></h3>
-      <button class="modal-close" onclick="closeModal('modal-checkin-view')">×</button>
+      <h3>SOAP Notes &mdash; <span id="checkin-view-patient"></span></h3>
+      <button class="modal-close" onclick="closeModal('modal-checkin-view')">&times;</button>
     </div>
     <div class="modal-body" id="checkin-view-body"></div>
     <div class="modal-footer">
@@ -1273,13 +1273,12 @@
   </div>
 </div>
 
-
 <!-- PATIENT PROFILE MODAL -->
 <div class="modal-overlay" id="modal-profile">
   <div class="modal" style="max-width:860px;">
     <div class="modal-header">
-      <h3>Patient Profile — <span id="profile-modal-name"></span></h3>
-      <button class="modal-close" onclick="closeModal('modal-profile')">×</button>
+      <h3>Patient Profile &mdash; <span id="profile-modal-name"></span></h3>
+      <button class="modal-close" onclick="closeModal('modal-profile')">&times;</button>
     </div>
     <div class="modal-body" id="profile-modal-body"></div>
     <div class="modal-footer">
@@ -1289,8 +1288,6 @@
 </div>
 
 <div class="notification" id="notification"></div>
-
-<script>
 
 <script>
 // ===================== API LAYER =====================
@@ -1308,11 +1305,11 @@ async function api(method, path, body) {
   return json.data;
 }
 
-const GET  = (p, q) => api('GET',    p + (q ? '?' + new URLSearchParams(q).toString() : ''));
-const POST = (p, b) => api('POST',   p, b);
-const PUT  = (p, b) => api('PUT',    p, b);
-const PATCH= (p, b) => api('PATCH',  p, b);
-const DEL  = (p)    => api('DELETE', p);
+const GET   = (p, q) => api('GET',    p + (q ? '?' + new URLSearchParams(q).toString() : ''));
+const POST  = (p, b) => api('POST',   p, b);
+const PUT   = (p, b) => api('PUT',    p, b);
+const PATCH = (p, b) => api('PATCH',  p, b);
+const DEL   = (p)    => api('DELETE', p);
 
 // ===================== STATE =====================
 let patients = [];
@@ -1320,7 +1317,7 @@ let checkins = [];
 let invoices = [];
 let currentCheckinId = null;
 
-function notify(msg, duration=3200) {
+function notify(msg, duration = 3200) {
   const el = document.getElementById('notification');
   el.textContent = msg;
   el.classList.add('show');
@@ -1328,7 +1325,7 @@ function notify(msg, duration=3200) {
 }
 
 function fmt(n) {
-  return '₹ ' + Number(n||0).toLocaleString('en-IN', {minimumFractionDigits:2, maximumFractionDigits:2});
+  return '\u20B9 ' + Number(n || 0).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
 function loading(show) {
@@ -1338,27 +1335,28 @@ function loading(show) {
 // ===================== NAVIGATION =====================
 const pageTitles = {
   dashboard: 'Dashboard',
-  reception: 'Reception — Patient Records',
-  checkin: 'Check-in & SOAP Notes',
-  billing: 'Billing',
-  invoices: 'Invoice History & Reports'
+  reception: 'Reception \u2014 Patient Records',
+  checkin:   'Check-in & SOAP Notes',
+  billing:   'Billing',
+  invoices:  'Invoice History & Reports'
 };
 
 function showPage(id) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
   document.getElementById('page-' + id).classList.add('active');
-  document.querySelectorAll('.nav-item')[['dashboard','reception','checkin','billing','invoices'].indexOf(id)].classList.add('active');
+  const idx = ['dashboard','reception','checkin','billing','invoices'].indexOf(id);
+  document.querySelectorAll('.nav-item')[idx].classList.add('active');
   document.getElementById('pageTitle').textContent = pageTitles[id];
   refreshPage(id);
 }
 
 function refreshPage(id) {
-  if(id === 'dashboard') loadDashboard();
-  if(id === 'reception') loadPatients();
-  if(id === 'checkin')   loadCheckins();
-  if(id === 'billing')   loadBilling();
-  if(id === 'invoices')  loadInvoices();
+  if (id === 'dashboard') loadDashboard();
+  if (id === 'reception') loadPatients();
+  if (id === 'checkin')   loadCheckins();
+  if (id === 'billing')   loadBilling();
+  if (id === 'invoices')  loadInvoices();
 }
 
 // ===================== MODAL UTILS =====================
@@ -1369,84 +1367,86 @@ function closeModal(id) { document.getElementById(id).classList.remove('open'); 
 async function loadDashboard() {
   try {
     const stats = await GET('/stats');
-    document.getElementById('stat-total').textContent   = (stats.total || 0).toLocaleString();
-    document.getElementById('stat-revenue').textContent = 'Gross: ' + fmt(stats.gross_revenue);
-    document.getElementById('stat-paid').textContent    = (stats.paid_count || 0).toLocaleString();
-    document.getElementById('stat-paid-amt').textContent = fmt(stats.paid_amount);
-    document.getElementById('stat-draft').textContent   = (stats.draft_count || 0).toLocaleString();
-    document.getElementById('stat-draft-amt').textContent = fmt(stats.draft_balance);
+    document.getElementById('stat-total').textContent        = (stats.total || 0).toLocaleString();
+    document.getElementById('stat-revenue').textContent      = 'Gross: ' + fmt(stats.gross_revenue);
+    document.getElementById('stat-paid').textContent         = (stats.paid_count || 0).toLocaleString();
+    document.getElementById('stat-paid-amt').textContent     = fmt(stats.paid_amount);
+    document.getElementById('stat-draft').textContent        = (stats.draft_count || 0).toLocaleString();
+    document.getElementById('stat-draft-amt').textContent    = fmt(stats.draft_balance);
     document.getElementById('stat-outstanding').textContent  = (stats.outstanding_count || 0).toLocaleString();
     document.getElementById('stat-outstanding-amt').textContent = fmt(stats.outstanding_balance);
-    document.getElementById('stat-patients').textContent = (stats.patient_count || 0).toLocaleString();
-    document.getElementById('stat-owners').textContent   = (stats.owner_count || 0).toLocaleString();
-    document.getElementById('stat-checkins').textContent = (stats.open_checkins || 0).toLocaleString();
+    document.getElementById('stat-patients').textContent     = (stats.patient_count || 0).toLocaleString();
+    document.getElementById('stat-owners').textContent       = (stats.owner_count || 0).toLocaleString();
+    document.getElementById('stat-checkins').textContent     = (stats.open_checkins || 0).toLocaleString();
     document.getElementById('stat-vaccinations').textContent = (stats.vaccination_count || 0).toLocaleString();
 
     const recent = await GET('/invoices');
     const tbody = document.getElementById('dashboard-tbody');
-    tbody.innerHTML = recent.slice(0,10).map(inv => `
+    tbody.innerHTML = recent.slice(0, 10).map(inv => `
       <tr>
         <td>${formatDate(inv.date)}</td>
         <td><code style="font-size:11px;">${inv.ref}</code></td>
         <td>${inv.patient_name}</td>
-        <td>${inv.owner_name || '—'}</td>
+        <td>${inv.owner_name || '\u2014'}</td>
         <td><strong>${fmt(inv.total)}</strong></td>
         <td>${statusBadge(inv.status)}</td>
       </tr>
     `).join('') || '<tr><td colspan="6" style="text-align:center;padding:20px;color:var(--mid-gray);">No invoices yet</td></tr>';
-  } catch(e) { notify('⚠ Could not load dashboard: ' + e.message); }
+  } catch (e) {
+    notify('\u26A0 Could not load dashboard: ' + e.message);
+  }
 }
 
 function formatDate(d) {
-  if(!d) return '';
+  if (!d) return '';
   const dt = new Date(d + 'T00:00:00');
-  return dt.toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});
+  return dt.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
 }
 
 function statusBadge(s) {
-  const m = {Paid:'badge-paid',Draft:'badge-draft',Outstanding:'badge-outstanding'};
-  return `<span class="badge ${m[s]||'badge-draft'}">${s}</span>`;
+  const m = { Paid: 'badge-paid', Draft: 'badge-draft', Outstanding: 'badge-outstanding' };
+  return `<span class="badge ${m[s] || 'badge-draft'}">${s}</span>`;
 }
 
 // ===================== PATIENTS =====================
-let patFilter = {text:'', type:''};
+let patFilter = { text: '', type: '' };
 
 async function loadPatients() {
   try {
     loading(true);
     const q = {};
-    if(patFilter.text) q.q = patFilter.text;
-    if(patFilter.type) q.type = patFilter.type;
+    if (patFilter.text) q.q = patFilter.text;
+    if (patFilter.type) q.type = patFilter.type;
     patients = await GET('/patients', q);
     renderPatients();
-  } catch(e) { notify('⚠ ' + e.message); }
+  } catch (e) { notify('\u26A0 ' + e.message); }
   finally { loading(false); }
 }
 
 function renderPatients() {
   const tbody = document.getElementById('patients-tbody');
   const empty = document.getElementById('patients-empty');
-  if(!patients.length) { tbody.innerHTML=''; empty.style.display='block'; return; }
-  empty.style.display='none';
+  if (!patients.length) { tbody.innerHTML = ''; empty.style.display = 'block'; return; }
+  empty.style.display = 'none';
   tbody.innerHTML = patients.map(p => {
-    const typeCls = (p.type||'other').toLowerCase().replace(/[^a-z]/g,'_');
+    const pid = p.id || ('PaCPC-' + (p.patient_id || '')).padStart(5, '0');
     return `
     <tr>
       <td>
         <strong>${p.name}</strong>
-        <br><small style="color:var(--mid-gray);font-size:11px;">${p.id || ('PaCPC-'+(p.patient_id||'')).padStart(5,'0')}</small>
+        <br><small style="color:var(--mid-gray);font-size:11px;">${pid}</small>
       </td>
-      <td><span class="type-badge type-${p.type==='Canine'?'canine':p.type==='Feline'?'feline':'other'}">${p.type||'—'}</span></td>
-      <td>${p.sex||'—'}</td>
-      <td>${p.breed||'—'}</td>
-      <td>${p.colour||'—'}</td>
-      <td>${p.age||'—'}</td>
-      <td>${p.owner_name||'—'}</td>
-      <td>${p.phone||'—'}</td>
+      <td><span class="type-badge type-${p.type === 'Canine' ? 'canine' : p.type === 'Feline' ? 'feline' : 'other'}">${p.type || '\u2014'}</span></td>
+      <td>${p.sex || '\u2014'}</td>
+      <td>${p.breed || '\u2014'}</td>
+      <td>${p.colour || '\u2014'}</td>
+      <td>${p.age || '\u2014'}</td>
+      <td>${p.owner_name || '\u2014'}</td>
+      <td>${p.phone || '\u2014'}</td>
       <td>
-        <span class="action-link" onclick="viewPatientProfile('${p.id||'PaCPC-'+(p.patient_id||'')}')" title="Full profile">Profile</span>
-        <span class="action-link" onclick="newInvoiceForPatient('${p.id||'PaCPC-'+(p.patient_id||'')}')" title="Create invoice">Invoice</span>
-        <span class="action-link danger" onclick="deletePatient('${p.id||'PaCPC-'+(p.patient_id||'')}','${p.name.replace(/'/g,"\\'")}')" title="Delete">Del</span>
+        <span class="action-link" onclick="viewPatientProfile('${pid}')">Profile</span>
+        <span class="action-link" onclick="newInvoiceForPatient('${pid}')">Invoice</span>
+        <span class="action-link danger" onclick="deletePatient('${pid}','${p.name.replace(/'/g, "\\'")}')">Del</span>
       </td>
     </tr>`;
   }).join('');
@@ -1454,7 +1454,7 @@ function renderPatients() {
 
 async function viewPatientProfile(id) {
   try {
-    notify('Loading profile…');
+    notify('Loading profile\u2026');
     const profile = await GET('/patients/' + encodeURIComponent(id) + '/profile');
     const p = profile.patient;
     const vacc = profile.vaccinations || [];
@@ -1464,48 +1464,52 @@ async function viewPatientProfile(id) {
     const modalBody = `
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px;">
         <div>
-          <div class="form-section-title">🐾 Pet Details</div>
+          <div class="form-section-title">Pet Details</div>
           <table style="font-size:13px;width:100%;border-collapse:collapse;">
             <tr><td style="color:var(--mid-gray);padding:3px 0;width:110px;">Name</td><td><strong>${p.name}</strong></td></tr>
-            <tr><td style="color:var(--mid-gray);padding:3px 0;">ID</td><td><code>${p.id||'—'}</code></td></tr>
-            <tr><td style="color:var(--mid-gray);padding:3px 0;">Species</td><td>${p.type||'—'}</td></tr>
-            <tr><td style="color:var(--mid-gray);padding:3px 0;">Sex</td><td>${p.sex||'—'}</td></tr>
-            <tr><td style="color:var(--mid-gray);padding:3px 0;">Breed</td><td>${p.breed||'—'}</td></tr>
-            <tr><td style="color:var(--mid-gray);padding:3px 0;">Colour</td><td>${p.colour||'—'}</td></tr>
-            <tr><td style="color:var(--mid-gray);padding:3px 0;">DOB/Age</td><td>${p.age||'—'}</td></tr>
-            <tr><td style="color:var(--mid-gray);padding:3px 0;">Microchip</td><td>${p.microchip_no||'—'}</td></tr>
+            <tr><td style="color:var(--mid-gray);padding:3px 0;">ID</td><td><code>${p.id || '\u2014'}</code></td></tr>
+            <tr><td style="color:var(--mid-gray);padding:3px 0;">Species</td><td>${p.type || '\u2014'}</td></tr>
+            <tr><td style="color:var(--mid-gray);padding:3px 0;">Sex</td><td>${p.sex || '\u2014'}</td></tr>
+            <tr><td style="color:var(--mid-gray);padding:3px 0;">Breed</td><td>${p.breed || '\u2014'}</td></tr>
+            <tr><td style="color:var(--mid-gray);padding:3px 0;">Colour</td><td>${p.colour || '\u2014'}</td></tr>
+            <tr><td style="color:var(--mid-gray);padding:3px 0;">DOB/Age</td><td>${p.age || '\u2014'}</td></tr>
+            <tr><td style="color:var(--mid-gray);padding:3px 0;">Microchip</td><td>${p.microchip_no || '\u2014'}</td></tr>
           </table>
         </div>
         <div>
-          <div class="form-section-title">👤 Owner Details</div>
+          <div class="form-section-title">Owner Details</div>
           <table style="font-size:13px;width:100%;border-collapse:collapse;">
-            <tr><td style="color:var(--mid-gray);padding:3px 0;width:80px;">Name</td><td><strong>${p.owner_name||'—'}</strong></td></tr>
-            <tr><td style="color:var(--mid-gray);padding:3px 0;">Phone</td><td>${p.phone||'—'}</td></tr>
-            <tr><td style="color:var(--mid-gray);padding:3px 0;">Email</td><td>${p.email||'—'}</td></tr>
+            <tr><td style="color:var(--mid-gray);padding:3px 0;width:80px;">Name</td><td><strong>${p.owner_name || '\u2014'}</strong></td></tr>
+            <tr><td style="color:var(--mid-gray);padding:3px 0;">Phone</td><td>${p.phone || '\u2014'}</td></tr>
+            <tr><td style="color:var(--mid-gray);padding:3px 0;">Email</td><td>${p.email || '\u2014'}</td></tr>
           </table>
           ${vacc.length ? `
-          <div class="form-section-title" style="margin-top:16px;">💉 Vaccinations</div>
+          <div class="form-section-title" style="margin-top:16px;">Vaccinations</div>
           <div style="font-size:12px;">
-            ${vacc.slice(0,5).map(v=>'<div style="padding:3px 0;border-bottom:1px solid var(--light-gray);">'+
-              '<strong>'+v.treatment+'</strong> <span style="color:var(--mid-gray);">'+v.type_care+'</span>'+
-              (v.date ? ' · '+v.date : '')+'</div>').join('')}
-            ${vacc.length>5?'<small style="color:var(--mid-gray);">+'+(vacc.length-5)+' more…</small>':''}
+            ${vacc.slice(0, 5).map(v =>
+              '<div style="padding:3px 0;border-bottom:1px solid var(--light-gray);">' +
+              '<strong>' + v.treatment + '</strong> <span style="color:var(--mid-gray);">' + v.type_care + '</span>' +
+              (v.date ? ' \u00B7 ' + v.date : '') + '</div>'
+            ).join('')}
+            ${vacc.length > 5 ? '<small style="color:var(--mid-gray);">+' + (vacc.length - 5) + ' more\u2026</small>' : ''}
           </div>` : ''}
         </div>
       </div>
       ${soap.length ? `
-      <div class="form-section-title">📋 Visit History (last ${Math.min(soap.length,5)})</div>
+      <div class="form-section-title">Visit History (last ${Math.min(soap.length, 5)})</div>
       <div style="margin-bottom:16px;">
-        ${soap.slice(0,5).map(s => '<div style="background:white;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin-bottom:8px;font-size:12px;">'+
-          '<div style="display:flex;justify-content:space-between;margin-bottom:4px;">'+
-          '<strong>'+(s.chief_complaint||'Visit')+'</strong>'+
-          '<span style="color:var(--mid-gray);">'+(s.created_at||'').slice(0,10)+'</span></div>'+
-          (s.diagnosis ? '<div>Dx: <em>'+s.diagnosis+'</em></div>' : '')+
-          (s.weight ? '<span style="color:var(--mid-gray);">Weight: '+s.weight+'</span>' : '')+
-          '</div>').join('')}
+        ${soap.slice(0, 5).map(s =>
+          '<div style="background:white;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin-bottom:8px;font-size:12px;">' +
+          '<div style="display:flex;justify-content:space-between;margin-bottom:4px;">' +
+          '<strong>' + (s.chief_complaint || 'Visit') + '</strong>' +
+          '<span style="color:var(--mid-gray);">' + (s.created_at || '').slice(0, 10) + '</span></div>' +
+          (s.diagnosis ? '<div>Dx: <em>' + s.diagnosis + '</em></div>' : '') +
+          (s.weight ? '<span style="color:var(--mid-gray);">Weight: ' + s.weight + '</span>' : '') +
+          '</div>'
+        ).join('')}
       </div>` : ''}
       ${invs.length ? `
-      <div class="form-section-title">🧾 Recent Invoices</div>
+      <div class="form-section-title">Recent Invoices</div>
       <table style="width:100%;font-size:12px;border-collapse:collapse;">
         <thead><tr style="background:var(--forest);color:white;">
           <th style="padding:6px 10px;text-align:left;">Ref</th>
@@ -1515,25 +1519,27 @@ async function viewPatientProfile(id) {
           <th style="padding:6px 10px;">Method</th>
         </tr></thead>
         <tbody>
-          ${invs.slice(0,8).map(i=>'<tr style="border-bottom:1px solid var(--light-gray);">'+
-            '<td style="padding:6px 10px;font-family:monospace;font-size:11px;">'+i.ref+'</td>'+
-            '<td style="padding:6px 10px;text-align:center;">'+formatDate(i.date)+'</td>'+
-            '<td style="padding:6px 10px;text-align:right;font-weight:600;">'+fmt(i.total)+'</td>'+
-            '<td style="padding:6px 10px;">'+statusBadge(i.status)+'</td>'+
-            '<td style="padding:6px 10px;">'+((i.method||i.payment_type)||'—')+'</td>'+
-            '</tr>').join('')}
+          ${invs.slice(0, 8).map(i =>
+            '<tr style="border-bottom:1px solid var(--light-gray);">' +
+            '<td style="padding:6px 10px;font-family:monospace;font-size:11px;">' + i.ref + '</td>' +
+            '<td style="padding:6px 10px;text-align:center;">' + formatDate(i.date) + '</td>' +
+            '<td style="padding:6px 10px;text-align:right;font-weight:600;">' + fmt(i.total) + '</td>' +
+            '<td style="padding:6px 10px;">' + statusBadge(i.status) + '</td>' +
+            '<td style="padding:6px 10px;">' + ((i.method || i.payment_type) || '\u2014') + '</td>' +
+            '</tr>'
+          ).join('')}
         </tbody>
       </table>` : ''}
     `;
-    document.getElementById('profile-modal-name').textContent = p.name + (p.type ? ' · ' + p.type : '');
+    document.getElementById('profile-modal-name').textContent = p.name + (p.type ? ' \u00B7 ' + p.type : '');
     document.getElementById('profile-modal-body').innerHTML = modalBody;
     openModal('modal-profile');
-  } catch(e) { notify('⚠ ' + e.message); }
+  } catch (e) { notify('\u26A0 ' + e.message); }
 }
 
 function filterPatients(txt, type) {
-  if(txt !== null && txt !== undefined) patFilter.text = txt;
-  if(type !== undefined) patFilter.type = type;
+  if (txt !== null && txt !== undefined) patFilter.text = txt;
+  if (type !== undefined) patFilter.type = type;
   loadPatients();
 }
 
@@ -1549,8 +1555,8 @@ function openNewPatientModal() {
 async function savePatient() {
   const name = document.getElementById('p-name').value.trim();
   const owner_name = document.getElementById('p-owner').value.trim();
-  if(!name) { notify('⚠ Pet name is required'); return; }
-  if(!owner_name) { notify('⚠ Owner name is required'); return; }
+  if (!name) { notify('\u26A0 Pet name is required'); return; }
+  if (!owner_name) { notify('\u26A0 Owner name is required'); return; }
 
   try {
     loading(true);
@@ -1567,19 +1573,19 @@ async function savePatient() {
       address: document.getElementById('p-address').value,
     });
     closeModal('modal-patient');
-    notify('✓ Patient ' + name + ' registered');
+    notify('\u2713 Patient ' + name + ' registered');
     loadPatients();
-  } catch(e) { notify('⚠ ' + e.message); }
+  } catch (e) { notify('\u26A0 ' + e.message); }
   finally { loading(false); }
 }
 
 async function deletePatient(id, name) {
-  if(!confirm(`Delete patient "${name}"? Their invoices will remain.`)) return;
+  if (!confirm('Delete patient "' + name + '"? Their invoices will remain.')) return;
   try {
     await DEL('/patients/' + id);
     notify('Patient deleted');
     loadPatients();
-  } catch(e) { notify('⚠ ' + e.message); }
+  } catch (e) { notify('\u26A0 ' + e.message); }
 }
 
 function newInvoiceForPatient(id) {
@@ -1588,33 +1594,33 @@ function newInvoiceForPatient(id) {
 }
 
 // ===================== CHECKINS =====================
-let ciFilter = {text:'', status:''};
+let ciFilter = { text: '', status: '' };
 
 async function loadCheckins() {
   try {
     loading(true);
     const q = {};
-    if(ciFilter.text)   q.q = ciFilter.text;
-    if(ciFilter.status) q.status = ciFilter.status;
+    if (ciFilter.text)   q.q = ciFilter.text;
+    if (ciFilter.status) q.status = ciFilter.status;
     checkins = await GET('/checkins', q);
     renderCheckins();
-  } catch(e) { notify('⚠ ' + e.message); }
+  } catch (e) { notify('\u26A0 ' + e.message); }
   finally { loading(false); }
 }
 
 function renderCheckins() {
   const tbody = document.getElementById('checkin-tbody');
   const empty = document.getElementById('checkin-empty');
-  if(!checkins.length) { tbody.innerHTML=''; empty.style.display='block'; return; }
-  empty.style.display='none';
+  if (!checkins.length) { tbody.innerHTML = ''; empty.style.display = 'block'; return; }
+  empty.style.display = 'none';
   tbody.innerHTML = checkins.map(c => `
     <tr>
       <td>${formatDate(c.date)}</td>
       <td><strong>${c.patient_name}</strong></td>
-      <td>${c.owner_name||'—'}</td>
+      <td>${c.owner_name || '\u2014'}</td>
       <td>${c.doctor}</td>
-      <td style="max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${c.assessment||'—'}</td>
-      <td><span class="badge ${c.status==='done'?'badge-paid':'badge-draft'}">${c.status==='done'?'Completed':'Open'}</span></td>
+      <td style="max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${c.assessment || '\u2014'}</td>
+      <td><span class="badge ${c.status === 'done' ? 'badge-paid' : 'badge-draft'}">${c.status === 'done' ? 'Completed' : 'Open'}</span></td>
       <td>
         <span class="action-link" onclick="viewCheckin('${c.id}')">View</span>
         <span class="action-link" onclick="markCheckinDone('${c.id}')">Complete</span>
@@ -1625,29 +1631,28 @@ function renderCheckins() {
 }
 
 function filterCheckins(txt, status) {
-  if(txt !== null && txt !== undefined) ciFilter.text = txt;
-  if(status !== undefined) ciFilter.status = status;
+  if (txt !== null && txt !== undefined) ciFilter.text = txt;
+  if (status !== undefined) ciFilter.status = status;
   loadCheckins();
 }
 
 async function openCheckinModal() {
-  try {
-    patients = await GET('/patients');
-  } catch(e) {}
+  try { patients = await GET('/patients'); } catch (e) {}
   const sel = document.getElementById('ci-patient');
-  sel.innerHTML = '<option value="">— Select Patient —</option>' +
+  sel.innerHTML = '<option value="">-- Select Patient --</option>' +
     patients.map(p => `<option value="${p.id}">${p.name} (${p.owner_name})</option>`).join('');
-  document.getElementById('ci-date').value = new Date().toISOString().slice(0,10);
-  ['ci-doctor','ci-complaint','ci-subjective','ci-objective','ci-assessment','ci-plan','ci-procedures','ci-meds','ci-followup'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('ci-date').value = new Date().toISOString().slice(0, 10);
+  ['ci-doctor','ci-complaint','ci-subjective','ci-objective','ci-assessment','ci-plan','ci-procedures','ci-meds','ci-followup']
+    .forEach(id => document.getElementById(id).value = '');
   openModal('modal-checkin');
 }
 
 async function saveCheckin() {
   const patient_id = document.getElementById('ci-patient').value;
   const doctor = document.getElementById('ci-doctor').value.trim();
-  const date = document.getElementById('ci-date').value;
-  if(!doctor) { notify('⚠ Doctor name required'); return; }
-  if(!date)   { notify('⚠ Date required'); return; }
+  const date   = document.getElementById('ci-date').value;
+  if (!doctor) { notify('\u26A0 Doctor name required'); return; }
+  if (!date)   { notify('\u26A0 Date required'); return; }
 
   try {
     loading(true);
@@ -1663,16 +1668,16 @@ async function saveCheckin() {
       followup:    document.getElementById('ci-followup').value,
     });
     closeModal('modal-checkin');
-    notify('✓ Check-in saved');
+    notify('\u2713 Check-in saved');
     loadCheckins();
-  } catch(e) { notify('⚠ ' + e.message); }
+  } catch (e) { notify('\u26A0 ' + e.message); }
   finally { loading(false); }
 }
 
 async function viewCheckin(id) {
   currentCheckinId = id;
-  const c = checkins.find(x=>x.id===id);
-  if(!c) return;
+  const c = checkins.find(x => x.id === id);
+  if (!c) return;
   document.getElementById('checkin-view-patient').textContent = c.patient_name;
   document.getElementById('checkin-view-body').innerHTML = `
     <div style="margin-bottom:16px;">
@@ -1681,22 +1686,22 @@ async function viewCheckin(id) {
         <div><strong>Date:</strong> ${formatDate(c.date)}</div>
         <div><strong>Doctor:</strong> ${c.doctor}</div>
         <div><strong>Patient:</strong> ${c.patient_name}</div>
-        <div><strong>Owner:</strong> ${c.owner_name||'—'}</div>
-        <div style="grid-column:span 2;"><strong>Chief Complaint:</strong> ${c.complaint||'—'}</div>
+        <div><strong>Owner:</strong> ${c.owner_name || '\u2014'}</div>
+        <div style="grid-column:span 2;"><strong>Chief Complaint:</strong> ${c.complaint || '\u2014'}</div>
       </div>
     </div>
     <div class="form-section-title" style="margin-bottom:10px;">SOAP Notes</div>
     <div class="soap-section" style="margin-bottom:16px;">
-      <div class="soap-block"><label>S — Subjective</label><p style="font-size:13px;white-space:pre-wrap;">${c.subjective||'—'}</p></div>
-      <div class="soap-block"><label>O — Objective</label><p style="font-size:13px;white-space:pre-wrap;">${c.objective||'—'}</p></div>
-      <div class="soap-block"><label>A — Assessment</label><p style="font-size:13px;white-space:pre-wrap;">${c.assessment||'—'}</p></div>
-      <div class="soap-block"><label>P — Plan</label><p style="font-size:13px;white-space:pre-wrap;">${c.plan||'—'}</p></div>
+      <div class="soap-block"><label>S \u2014 Subjective</label><p style="font-size:13px;white-space:pre-wrap;">${c.subjective || '\u2014'}</p></div>
+      <div class="soap-block"><label>O \u2014 Objective</label><p style="font-size:13px;white-space:pre-wrap;">${c.objective || '\u2014'}</p></div>
+      <div class="soap-block"><label>A \u2014 Assessment</label><p style="font-size:13px;white-space:pre-wrap;">${c.assessment || '\u2014'}</p></div>
+      <div class="soap-block"><label>P \u2014 Plan</label><p style="font-size:13px;white-space:pre-wrap;">${c.plan || '\u2014'}</p></div>
     </div>
     <div class="form-section-title" style="margin-bottom:10px;">Treatment</div>
     <div style="font-size:13px;">
-      <p><strong>Procedures:</strong> ${c.procedures||'—'}</p>
-      <p style="margin-top:8px;"><strong>Medications:</strong> ${c.medications||'—'}</p>
-      <p style="margin-top:8px;"><strong>Follow-up:</strong> ${c.followup||'—'}</p>
+      <p><strong>Procedures:</strong> ${c.procedures || '\u2014'}</p>
+      <p style="margin-top:8px;"><strong>Medications:</strong> ${c.medications || '\u2014'}</p>
+      <p style="margin-top:8px;"><strong>Follow-up:</strong> ${c.followup || '\u2014'}</p>
     </div>
   `;
   openModal('modal-checkin-view');
@@ -1707,56 +1712,56 @@ async function markCheckinDone(id) {
     await PATCH('/checkins/' + id + '/status', { status: 'done' });
     notify('Marked as completed');
     loadCheckins();
-  } catch(e) { notify('⚠ ' + e.message); }
+  } catch (e) { notify('\u26A0 ' + e.message); }
 }
 
 async function deleteCheckin(id) {
-  if(!confirm('Delete this check-in record?')) return;
+  if (!confirm('Delete this check-in record?')) return;
   try {
     await DEL('/checkins/' + id);
     notify('Deleted');
     loadCheckins();
-  } catch(e) { notify('⚠ ' + e.message); }
+  } catch (e) { notify('\u26A0 ' + e.message); }
 }
 
 async function createInvoiceFromCheckin() {
-  const c = checkins.find(x=>x.id===currentCheckinId);
+  const c = checkins.find(x => x.id === currentCheckinId);
   closeModal('modal-checkin-view');
   showPage('billing');
   setTimeout(async () => {
     await openBillingModal(c ? c.patient_id : null);
-    if(c && c.procedures) {
+    if (c && c.procedures) {
       document.getElementById('billing-items-body').innerHTML = '';
-      c.procedures.split('\n').filter(l=>l.trim()).forEach(line => addBillingRow(line.trim()));
+      c.procedures.split('\n').filter(l => l.trim()).forEach(line => addBillingRow(line.trim()));
     }
   }, 150);
 }
 
 // ===================== BILLING =====================
-let billingFilter = {text:'', status:'', method:''};
+let billingFilter = { text: '', status: '', method: '' };
 let billingSortField = 'date', billingSortDir = 'desc';
 
 async function loadBilling() {
   try {
     loading(true);
     const q = {};
-    if(billingFilter.text) q.q = billingFilter.text;
-    if(billingFilter.status) q.status = billingFilter.status;
+    if (billingFilter.text)   q.q = billingFilter.text;
+    if (billingFilter.status) q.status = billingFilter.status;
     invoices = await GET('/invoices', q);
     renderBilling();
-  } catch(e) { notify('⚠ ' + e.message); }
+  } catch (e) { notify('\u26A0 ' + e.message); }
   finally { loading(false); }
 }
 
 function renderBilling() {
   let data = [...invoices];
-  if(billingFilter.method) data = data.filter(i=>i.method===billingFilter.method);
+  if (billingFilter.method) data = data.filter(i => i.method === billingFilter.method);
   data = sortInvoiceData(data, billingSortField, billingSortDir);
 
   const tbody = document.getElementById('billing-tbody');
   const empty = document.getElementById('billing-empty');
-  if(!data.length) { tbody.innerHTML=''; empty.style.display='block'; return; }
-  empty.style.display='none';
+  if (!data.length) { tbody.innerHTML = ''; empty.style.display = 'block'; return; }
+  empty.style.display = 'none';
 
   tbody.innerHTML = data.map(inv => `
     <tr>
@@ -1765,8 +1770,8 @@ function renderBilling() {
       <td><strong>${inv.patient_name}</strong></td>
       <td>${inv.owner_name}</td>
       <td><strong>${fmt(inv.total)}</strong></td>
-      <td style="color:${inv.balance>0?'var(--rust)':'var(--paid)'};">${fmt(inv.balance)}</td>
-      <td>${inv.method?`<span class="pay-method">${inv.method}</span>`:'—'}</td>
+      <td style="color:${inv.balance > 0 ? 'var(--rust)' : 'var(--paid)'};">${fmt(inv.balance)}</td>
+      <td>${inv.method ? `<span class="pay-method">${inv.method}</span>` : '\u2014'}</td>
       <td>${statusBadge(inv.status)}</td>
       <td>
         <span class="action-link" onclick="previewInvoice('${encodeURIComponent(inv.ref)}')">View</span>
@@ -1778,41 +1783,39 @@ function renderBilling() {
 }
 
 function filterBilling(txt, status, method) {
-  if(txt !== null && txt !== undefined) billingFilter.text = txt;
-  if(status !== undefined) billingFilter.status = status;
-  if(method !== undefined) billingFilter.method = method;
-  if(billingFilter.text || billingFilter.status) loadBilling(); else renderBilling();
+  if (txt !== null && txt !== undefined) billingFilter.text = txt;
+  if (status !== undefined) billingFilter.status = status;
+  if (method !== undefined) billingFilter.method = method;
+  if (billingFilter.text || billingFilter.status) loadBilling(); else renderBilling();
 }
 
 function sortBilling(field) {
-  if(billingSortField===field) billingSortDir = billingSortDir==='asc'?'desc':'asc';
-  else { billingSortField=field; billingSortDir='desc'; }
+  if (billingSortField === field) billingSortDir = billingSortDir === 'asc' ? 'desc' : 'asc';
+  else { billingSortField = field; billingSortDir = 'desc'; }
   renderBilling();
 }
 
 function sortInvoiceData(data, field, dir) {
-  return data.sort((a,b) => {
-    let va = field==='date' ? new Date(a.date) : a[field]||0;
-    let vb = field==='date' ? new Date(b.date) : b[field]||0;
-    return dir==='asc' ? va-vb : vb-va;
+  return data.sort((a, b) => {
+    let va = field === 'date' ? new Date(a.date) : a[field] || 0;
+    let vb = field === 'date' ? new Date(b.date) : b[field] || 0;
+    return dir === 'asc' ? va - vb : vb - va;
   });
 }
 
 async function openBillingModal(prePatientId) {
-  try {
-    patients = await GET('/patients');
-  } catch(e) {}
+  try { patients = await GET('/patients'); } catch (e) {}
   const sel = document.getElementById('b-patient');
-  sel.innerHTML = '<option value="">— Select Patient —</option>' +
+  sel.innerHTML = '<option value="">-- Select Patient --</option>' +
     patients.map(p => `<option value="${p.id}">${p.name} (${p.owner_name})</option>`).join('');
-  if(prePatientId) { sel.value = prePatientId; autofillOwner(); }
+  if (prePatientId) { sel.value = prePatientId; autofillOwner(); }
 
   const now = new Date();
-  document.getElementById('b-date').value = now.toISOString().slice(0,10);
+  document.getElementById('b-date').value = now.toISOString().slice(0, 10);
 
   const yy = String(now.getFullYear()).slice(2);
-  const mm = String(now.getMonth()+1).padStart(2,'0');
-  document.getElementById('b-ref').value = `IN:01-${yy}${mm}-####`;
+  const mm = String(now.getMonth() + 1).padStart(2, '0');
+  document.getElementById('b-ref').value = 'IN:01-' + yy + mm + '-####';
 
   document.getElementById('b-method').value = '';
   document.getElementById('b-status').value = 'Draft';
@@ -1825,11 +1828,11 @@ async function openBillingModal(prePatientId) {
 
 function autofillOwner() {
   const pid = document.getElementById('b-patient').value;
-  const pat = patients.find(p=>p.id===pid);
+  const pat = patients.find(p => p.id === pid);
   document.getElementById('b-owner').value = pat ? pat.owner_name : '';
 }
 
-function addBillingRow(name='') {
+function addBillingRow(name = '') {
   const tbody = document.getElementById('billing-items-body');
   const tr = document.createElement('tr');
   tr.innerHTML = `
@@ -1837,55 +1840,55 @@ function addBillingRow(name='') {
     <td><input type="number" value="1" min="1" oninput="calcTotals()" style="width:60px;"></td>
     <td><input type="number" value="0" min="0" oninput="calcTotals()" style="width:100px;"></td>
     <td><input type="number" value="0" min="0" oninput="calcTotals()" style="width:80px;"></td>
-    <td class="row-total" style="font-weight:600;">₹ 0.00</td>
-    <td><button class="remove-row" onclick="this.closest('tr').remove();calcTotals()">×</button></td>
+    <td class="row-total" style="font-weight:600;">&#8377; 0.00</td>
+    <td><button class="remove-row" onclick="this.closest('tr').remove();calcTotals()">&times;</button></td>
   `;
   tbody.appendChild(tr);
 }
 
 function calcTotals() {
-  let subtotal=0, discTotal=0;
+  let subtotal = 0, discTotal = 0;
   document.querySelectorAll('#billing-items-body tr').forEach(row => {
     const inputs = row.querySelectorAll('input[type=number]');
-    const qty   = parseFloat(inputs[0].value)||0;
-    const price = parseFloat(inputs[1].value)||0;
-    const disc  = parseFloat(inputs[2].value)||0;
-    const lineTotal = qty*price - disc;
-    subtotal  += qty*price;
+    const qty   = parseFloat(inputs[0].value) || 0;
+    const price = parseFloat(inputs[1].value) || 0;
+    const disc  = parseFloat(inputs[2].value) || 0;
+    const lineTotal = qty * price - disc;
+    subtotal  += qty * price;
     discTotal += disc;
-    row.querySelector('.row-total').textContent = '₹ ' + lineTotal.toFixed(2);
+    row.querySelector('.row-total').textContent = '\u20B9 ' + lineTotal.toFixed(2);
   });
   const total = subtotal - discTotal;
-  document.getElementById('b-subtotal').textContent       = '₹ ' + subtotal.toFixed(2);
-  document.getElementById('b-discount-total').textContent = '₹ ' + discTotal.toFixed(2);
-  document.getElementById('b-total').textContent          = '₹ ' + total.toFixed(2);
+  document.getElementById('b-subtotal').textContent       = '\u20B9 ' + subtotal.toFixed(2);
+  document.getElementById('b-discount-total').textContent = '\u20B9 ' + discTotal.toFixed(2);
+  document.getElementById('b-total').textContent          = '\u20B9 ' + total.toFixed(2);
   calcBalance(total);
 }
 
 function calcBalance(total) {
-  if(total === undefined) total = parseFloat(document.getElementById('b-total').textContent.replace(/[₹,\s]/g,''))||0;
-  const paid = parseFloat(document.getElementById('b-paid-amt').value)||0;
-  document.getElementById('b-balance').textContent = '₹ ' + Math.max(0, total-paid).toFixed(2);
+  if (total === undefined) total = parseFloat(document.getElementById('b-total').textContent.replace(/[^\d.]/g, '')) || 0;
+  const paid = parseFloat(document.getElementById('b-paid-amt').value) || 0;
+  document.getElementById('b-balance').textContent = '\u20B9 ' + Math.max(0, total - paid).toFixed(2);
 }
 
 async function saveInvoice() {
   const patient_id = document.getElementById('b-patient').value;
-  if(!patient_id) { notify('⚠ Select a patient'); return; }
+  if (!patient_id) { notify('\u26A0 Select a patient'); return; }
 
   const items = [];
   document.querySelectorAll('#billing-items-body tr').forEach(row => {
     const inputs = row.querySelectorAll('input');
     const name = inputs[0].value.trim();
-    if(name) items.push({
+    if (name) items.push({
       name,
-      quantity:   parseFloat(inputs[1].value)||1,
-      unit_price: parseFloat(inputs[2].value)||0,
-      discount:   parseFloat(inputs[3].value)||0,
+      quantity:   parseFloat(inputs[1].value) || 1,
+      unit_price: parseFloat(inputs[2].value) || 0,
+      discount:   parseFloat(inputs[3].value) || 0,
     });
   });
-  if(!items.length) { notify('⚠ Add at least one item'); return; }
+  if (!items.length) { notify('\u26A0 Add at least one item'); return; }
 
-  const paid_amount = parseFloat(document.getElementById('b-paid-amt').value)||0;
+  const paid_amount = parseFloat(document.getElementById('b-paid-amt').value) || 0;
 
   try {
     loading(true);
@@ -1898,42 +1901,42 @@ async function saveInvoice() {
       paid_amount, items
     });
     closeModal('modal-billing');
-    notify('✓ Invoice ' + inv.ref + ' saved to database');
+    notify('\u2713 Invoice ' + inv.ref + ' saved to database');
     loadBilling();
     loadDashboard();
-  } catch(e) { notify('⚠ ' + e.message); }
+  } catch (e) { notify('\u26A0 ' + e.message); }
   finally { loading(false); }
 }
 
 async function cycleStatus(ref) {
   ref = decodeURIComponent(ref);
-  const inv = invoices.find(i=>i.ref===ref);
-  if(!inv) return;
-  const statuses = ['Paid','Draft','Outstanding'];
-  const next = statuses[(statuses.indexOf(inv.status)+1)%3];
-  if(!confirm(`Change status to ${next}?`)) return;
+  const inv = invoices.find(i => i.ref === ref);
+  if (!inv) return;
+  const statuses = ['Paid', 'Draft', 'Outstanding'];
+  const next = statuses[(statuses.indexOf(inv.status) + 1) % 3];
+  if (!confirm('Change status to ' + next + '?')) return;
   try {
     await PATCH('/invoices/' + encodeURIComponent(ref) + '/status', { status: next });
-    notify('Status → ' + next);
+    notify('Status \u2192 ' + next);
     loadBilling();
     loadDashboard();
-  } catch(e) { notify('⚠ ' + e.message); }
+  } catch (e) { notify('\u26A0 ' + e.message); }
 }
 
 async function deleteInvoice(ref) {
   ref = decodeURIComponent(ref);
-  if(!confirm('Delete this invoice permanently?')) return;
+  if (!confirm('Delete this invoice permanently?')) return;
   try {
     await DEL('/invoices/' + encodeURIComponent(ref));
     notify('Invoice deleted');
     loadBilling();
     loadInvoices();
     loadDashboard();
-  } catch(e) { notify('⚠ ' + e.message); }
+  } catch (e) { notify('\u26A0 ' + e.message); }
 }
 
 // ===================== INVOICES PAGE =====================
-let invFilter = {text:'', status:''};
+let invFilter = { text: '', status: '' };
 let invSortMode = 'date-desc';
 const INV_PER_PAGE = 20;
 let invPage = 1;
@@ -1943,56 +1946,57 @@ async function loadInvoices() {
   try {
     loading(true);
     const q = { sort: invSortMode };
-    if(invFilter.text) q.q = invFilter.text;
-    if(invFilter.status) q.status = invFilter.status;
+    if (invFilter.text)   q.q = invFilter.text;
+    if (invFilter.status) q.status = invFilter.status;
 
     const period = document.getElementById('export-period').value;
     const now = new Date();
-    if(period === 'week') {
-      const start = new Date(now); start.setDate(now.getDate()-now.getDay());
-      q.from = start.toISOString().slice(0,10);
-      q.to   = now.toISOString().slice(0,10);
-    } else if(period === 'month') {
-      q.from = new Date(now.getFullYear(), now.getMonth(), 1).toISOString().slice(0,10);
-      q.to   = now.toISOString().slice(0,10);
-    } else if(period === 'year') {
-      q.from = `${now.getFullYear()}-01-01`;
-      q.to   = now.toISOString().slice(0,10);
-    } else if(period === 'custom') {
+    if (period === 'week') {
+      const start = new Date(now);
+      start.setDate(now.getDate() - now.getDay());
+      q.from = start.toISOString().slice(0, 10);
+      q.to   = now.toISOString().slice(0, 10);
+    } else if (period === 'month') {
+      q.from = new Date(now.getFullYear(), now.getMonth(), 1).toISOString().slice(0, 10);
+      q.to   = now.toISOString().slice(0, 10);
+    } else if (period === 'year') {
+      q.from = now.getFullYear() + '-01-01';
+      q.to   = now.toISOString().slice(0, 10);
+    } else if (period === 'custom') {
       const from = document.getElementById('export-from').value;
       const to   = document.getElementById('export-to').value;
-      if(from) q.from = from;
-      if(to)   q.to   = to;
+      if (from) q.from = from;
+      if (to)   q.to   = to;
     }
 
     allInvoices = await GET('/invoices', q);
     invPage = 1;
     renderInvoices();
-  } catch(e) { notify('⚠ ' + e.message); }
+  } catch (e) { notify('\u26A0 ' + e.message); }
   finally { loading(false); }
 }
 
 function renderInvoices() {
   const total = allInvoices.length;
   const pages = Math.ceil(total / INV_PER_PAGE);
-  const slice = allInvoices.slice((invPage-1)*INV_PER_PAGE, invPage*INV_PER_PAGE);
+  const slice = allInvoices.slice((invPage - 1) * INV_PER_PAGE, invPage * INV_PER_PAGE);
 
   const tbody = document.getElementById('invoices-tbody');
   const empty = document.getElementById('invoices-empty');
 
-  if(!slice.length) { tbody.innerHTML=''; empty.style.display='block'; }
+  if (!slice.length) { tbody.innerHTML = ''; empty.style.display = 'block'; }
   else {
-    empty.style.display='none';
+    empty.style.display = 'none';
     tbody.innerHTML = slice.map(inv => `
       <tr>
         <td>${formatDate(inv.date)}</td>
         <td><code style="font-size:11px;">${inv.ref}</code></td>
         <td><strong>${inv.patient_name}</strong></td>
-        <td>${inv.patient_type?`<span class="type-badge type-${(inv.patient_type||'other').toLowerCase()}">${inv.patient_type}</span>`:'—'}</td>
+        <td>${inv.patient_type ? `<span class="type-badge type-${(inv.patient_type || 'other').toLowerCase()}">${inv.patient_type}</span>` : '\u2014'}</td>
         <td>${inv.owner_name}</td>
         <td><strong>${fmt(inv.total)}</strong></td>
-        <td style="color:${inv.balance>0?'var(--rust)':'var(--paid)'};">${fmt(inv.balance)}</td>
-        <td>${inv.method?`<span class="pay-method">${inv.method}</span>`:'—'}</td>
+        <td style="color:${inv.balance > 0 ? 'var(--rust)' : 'var(--paid)'};">${fmt(inv.balance)}</td>
+        <td>${inv.method ? `<span class="pay-method">${inv.method}</span>` : '\u2014'}</td>
         <td>${statusBadge(inv.status)}</td>
         <td>
           <span class="action-link" onclick="previewInvoice('${encodeURIComponent(inv.ref)}')">View</span>
@@ -2003,44 +2007,44 @@ function renderInvoices() {
   }
 
   const pg = document.getElementById('invoices-pagination');
-  if(pages <= 1) { pg.innerHTML=''; return; }
+  if (pages <= 1) { pg.innerHTML = ''; return; }
   let btns = '';
-  for(let i=1;i<=pages;i++) btns += `<button class="page-btn ${i===invPage?'active':''}" onclick="gotoInvPage(${i})">${i}</button>`;
-  pg.innerHTML = `<span>Showing ${(invPage-1)*INV_PER_PAGE+1}–${Math.min(invPage*INV_PER_PAGE,total)} of ${total}</span>
+  for (let i = 1; i <= pages; i++) btns += `<button class="page-btn ${i === invPage ? 'active' : ''}" onclick="gotoInvPage(${i})">${i}</button>`;
+  pg.innerHTML = `<span>Showing ${(invPage - 1) * INV_PER_PAGE + 1}&ndash;${Math.min(invPage * INV_PER_PAGE, total)} of ${total}</span>
     <div class="pagination-btns">${btns}</div>`;
 }
 
-function gotoInvPage(p) { invPage=p; renderInvoices(); }
+function gotoInvPage(p) { invPage = p; renderInvoices(); }
 
 function filterInvoices(txt, status) {
-  if(txt !== null && txt !== undefined) invFilter.text = txt;
-  if(status !== undefined) invFilter.status = status;
+  if (txt !== null && txt !== undefined) invFilter.text = txt;
+  if (status !== undefined) invFilter.status = status;
   loadInvoices();
 }
 
 function sortInvoices(val) { invSortMode = val; loadInvoices(); }
 
-document.getElementById('export-period').addEventListener('change', function() {
+document.getElementById('export-period').addEventListener('change', function () {
   const v = this.value;
-  document.getElementById('export-from').style.display = v==='custom' ? '' : 'none';
-  document.getElementById('export-to').style.display   = v==='custom' ? '' : 'none';
+  document.getElementById('export-from').style.display = v === 'custom' ? '' : 'none';
+  document.getElementById('export-to').style.display   = v === 'custom' ? '' : 'none';
   loadInvoices();
 });
 document.getElementById('export-from').addEventListener('change', () => loadInvoices());
-document.getElementById('export-to').addEventListener('change', () => loadInvoices());
+document.getElementById('export-to').addEventListener('change',   () => loadInvoices());
 
 // ===================== INVOICE PREVIEW =====================
 async function previewInvoice(ref) {
   ref = decodeURIComponent(ref);
   try {
     const inv = await GET('/invoices/' + encodeURIComponent(ref));
-    const itemsHTML = (inv.items||[]).map(item => `
+    const itemsHTML = (inv.items || []).map(item => `
       <tr>
         <td style="padding:8px 10px;">${item.name}</td>
         <td style="padding:8px 10px;text-align:center;">${item.quantity}</td>
-        <td style="padding:8px 10px;text-align:right;">₹ ${Number(item.unit_price).toFixed(2)}</td>
-        <td style="padding:8px 10px;text-align:right;">₹ ${Number(item.discount||0).toFixed(2)}</td>
-        <td style="padding:8px 10px;text-align:right;font-weight:600;">₹ ${Number(item.total).toFixed(2)}</td>
+        <td style="padding:8px 10px;text-align:right;">\u20B9 ${Number(item.unit_price).toFixed(2)}</td>
+        <td style="padding:8px 10px;text-align:right;">\u20B9 ${Number(item.discount || 0).toFixed(2)}</td>
+        <td style="padding:8px 10px;text-align:right;font-weight:600;">\u20B9 ${Number(item.total).toFixed(2)}</td>
       </tr>
     `).join('');
 
@@ -2048,7 +2052,7 @@ async function previewInvoice(ref) {
       <div class="inv-header">
         <div class="inv-clinic">
           <h2>Paws and Claws Pet Clinic</h2>
-          <p>164 Thomas Avenue, Chennai – 600115</p>
+          <p>164 Thomas Avenue, Chennai &ndash; 600115</p>
         </div>
         <div style="text-align:right;">
           <div style="font-size:28px;font-weight:700;font-family:'Playfair Display',serif;color:var(--forest);">Invoice</div>
@@ -2057,17 +2061,17 @@ async function previewInvoice(ref) {
       </div>
       <div class="inv-details-grid" style="margin-bottom:20px;">
         <div>
-          <div class="inv-section-label">Billed To — Patient</div>
-          <div class="inv-section-value">${inv.patient_name}${inv.patient_type?' | '+inv.patient_type:''}</div>
+          <div class="inv-section-label">Billed To &mdash; Patient</div>
+          <div class="inv-section-value">${inv.patient_name}${inv.patient_type ? ' | ' + inv.patient_type : ''}</div>
           <div class="inv-section-sub">Owner / Parent: <strong>${inv.owner_name}</strong></div>
-          ${inv.phone?`<div class="inv-section-sub">Phone: ${inv.phone}</div>`:''}
+          ${inv.phone ? '<div class="inv-section-sub">Phone: ' + inv.phone + '</div>' : ''}
         </div>
         <div style="text-align:right;">
           <div class="inv-section-label">Invoice Date</div>
           <div class="inv-section-value">${formatDate(inv.date)}</div>
           <div style="margin-top:12px;">
             <div class="inv-section-label">Total Due</div>
-            <div style="font-size:24px;font-weight:700;color:var(--forest);">₹ ${Number(inv.total).toLocaleString('en-IN',{minimumFractionDigits:2})}</div>
+            <div style="font-size:24px;font-weight:700;color:var(--forest);">\u20B9 ${Number(inv.total).toLocaleString('en-IN', { minimumFractionDigits: 2 })}</div>
           </div>
         </div>
       </div>
@@ -2089,84 +2093,81 @@ async function previewInvoice(ref) {
         <div style="display:flex;justify-content:flex-end;gap:40px;padding:4px 0;"><span style="color:var(--rust);">Balance Due</span><strong style="color:var(--rust);">${fmt(inv.balance)}</strong></div>
       </div>
       <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);font-size:11px;text-align:center;color:var(--mid-gray);">
-        Status: <strong>${inv.status}</strong>${inv.method?' · Payment: '+inv.method:''} · Paws & Claws Clinic · 164 Thomas Avenue, Chennai – 600115
+        Status: <strong>${inv.status}</strong>${inv.method ? ' &middot; Payment: ' + inv.method : ''} &middot; Paws &amp; Claws Clinic &middot; 164 Thomas Avenue, Chennai &ndash; 600115
       </div>
     `;
     openModal('modal-invoice-view');
-  } catch(e) { notify('⚠ Could not load invoice: ' + e.message); }
+  } catch (e) { notify('\u26A0 Could not load invoice: ' + e.message); }
 }
 
 function printInvoice() {
   const content = document.getElementById('invoice-preview-content').innerHTML;
-  const win = window.open('','_blank');
-  win.document.write(`<html><head><title>Invoice</title><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans&display=swap" rel="stylesheet"><style>body{font-family:'DM Sans',sans-serif;padding:40px;max-width:700px;margin:0 auto;}@media print{body{padding:20px;}}</style></head><body>${content}</body></html>`);
+  const win = window.open('', '_blank');
+  win.document.write('<html><head><title>Invoice</title><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans&display=swap" rel="stylesheet"><style>body{font-family:\'DM Sans\',sans-serif;padding:40px;max-width:700px;margin:0 auto;}@media print{body{padding:20px;}}</style></head><body>' + content + '</body></html>');
   win.document.close();
-  setTimeout(()=>win.print(),500);
+  setTimeout(() => win.print(), 500);
 }
 
 // ===================== EXCEL EXPORT =====================
 async function exportExcel() {
   try {
-    notify('Preparing report…');
+    notify('Preparing report\u2026');
     const data = allInvoices.length ? allInvoices : await GET('/invoices');
-    if(!data.length) { notify('⚠ No data to export'); return; }
+    if (!data.length) { notify('\u26A0 No data to export'); return; }
 
     const rows = data.map(inv => ({
       'DATE':           formatDate(inv.date),
       'REF':            inv.ref,
       'PATIENT':        inv.patient_name,
-      'TYPE':           inv.patient_type||'',
+      'TYPE':           inv.patient_type || '',
       'CLIENT':         inv.owner_name,
-      'PHONE':          inv.phone||'',
+      'PHONE':          inv.phone || '',
       'TOTAL':          inv.total,
-      'AMOUNT_PAID':    inv.paid_amount||0,
+      'AMOUNT_PAID':    inv.paid_amount || 0,
       'BALANCE':        inv.balance,
-      'PAYMENT_METHOD': inv.method||'',
+      'PAYMENT_METHOD': inv.method || '',
       'STATUS':         inv.status
     }));
 
     const ws = XLSX.utils.json_to_sheet(rows);
-    ws['!cols'] = [{wch:18},{wch:20},{wch:18},{wch:10},{wch:22},{wch:14},{wch:12},{wch:14},{wch:12},{wch:16},{wch:12}];
+    ws['!cols'] = [{ wch: 18 }, { wch: 20 }, { wch: 18 }, { wch: 10 }, { wch: 22 }, { wch: 14 }, { wch: 12 }, { wch: 14 }, { wch: 12 }, { wch: 16 }, { wch: 12 }];
 
-    const paid = data.filter(i=>i.status==='Paid');
-    const draft = data.filter(i=>i.status==='Draft');
-    const out = data.filter(i=>i.status==='Outstanding');
+    const paid = data.filter(i => i.status === 'Paid');
+    const draft = data.filter(i => i.status === 'Draft');
+    const out  = data.filter(i => i.status === 'Outstanding');
 
     XLSX.utils.sheet_add_aoa(ws, [
       [],
-      ['── SUMMARY ──'],
-      ['Total Invoices', data.length, '', 'Gross Revenue', data.reduce((a,b)=>a+b.total,0)],
-      ['Paid', paid.length, '', 'Paid Amount', paid.reduce((a,b)=>a+b.total,0)],
-      ['Draft', draft.length, '', 'Draft Balance', draft.reduce((a,b)=>a+b.balance,0)],
-      ['Outstanding', out.length, '', 'Outstanding Balance', out.reduce((a,b)=>a+b.balance,0)],
+      ['\u2500\u2500 SUMMARY \u2500\u2500'],
+      ['Total Invoices', data.length, '', 'Gross Revenue', data.reduce((a, b) => a + b.total, 0)],
+      ['Paid',    paid.length,  '', 'Paid Amount',          paid.reduce((a, b) => a + b.total, 0)],
+      ['Draft',   draft.length, '', 'Draft Balance',        draft.reduce((a, b) => a + b.balance, 0)],
+      ['Outstanding', out.length, '', 'Outstanding Balance', out.reduce((a, b) => a + b.balance, 0)],
     ], { origin: rows.length + 3 });
 
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, 'Revenue Report');
-    const filename = `PawsClaws_Revenue_${new Date().toISOString().slice(0,10)}.xlsx`;
+    const filename = 'PawsClaws_Revenue_' + new Date().toISOString().slice(0, 10) + '.xlsx';
     XLSX.writeFile(wb, filename);
-    notify('✓ Excel downloaded: ' + filename);
-  } catch(e) { notify('⚠ Export failed: ' + e.message); }
+    notify('\u2713 Excel downloaded: ' + filename);
+  } catch (e) { notify('\u26A0 Export failed: ' + e.message); }
 }
 
 // ===================== INIT =====================
-document.getElementById('today-date').textContent = new Date().toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+document.getElementById('today-date').textContent = new Date().toLocaleDateString('en-IN', {
+  weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+});
 
-// Check server connection then load
 (async () => {
   try {
     await loadDashboard();
-  } catch(e) {
-    notify('⚠ Cannot connect to server. Make sure server.js is running on port 3000.');
-    document.getElementById('stat-total').textContent = '—';
-    document.getElementById('stat-paid').textContent = '—';
-    document.getElementById('stat-draft').textContent = '—';
-    document.getElementById('stat-outstanding').textContent = '—';
+  } catch (e) {
+    notify('\u26A0 Cannot connect to server. Make sure server.js is running on port 3000.');
+    ['stat-total','stat-paid','stat-draft','stat-outstanding'].forEach(id => document.getElementById(id).textContent = '\u2014');
 
-    // Show connection error banner
     const banner = document.createElement('div');
     banner.style.cssText = 'position:fixed;top:0;left:0;right:0;background:#B85C38;color:white;text-align:center;padding:10px;font-size:13px;z-index:9999;font-family:DM Sans,sans-serif;';
-    banner.innerHTML = '⚠ Server not running. <strong>Run: npm install && node server.js</strong> in the project folder, then refresh.';
+    banner.innerHTML = '\u26A0 Server not running. <strong>Run: npm install &amp;&amp; node server.js</strong> in the project folder, then refresh.';
     document.body.prepend(banner);
   }
 })();
